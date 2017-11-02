@@ -1,0 +1,5 @@
+markupsafe
+matplotlib
+mots_vides
+pygit2
+wordcloud
