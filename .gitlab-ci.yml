@@ -6,7 +6,7 @@ before_script:
   - apt install --yes python3-numpy
   - apt install --yes python3-pip
   - apt install --yes python3-pygit2
-  - pip3 install mot_vides wordcloud
+  - pip3 install mots_vides wordcloud
 image: debian:latest
 
 pages:
