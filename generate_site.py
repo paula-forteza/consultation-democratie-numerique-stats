@@ -109,14 +109,14 @@ def main():
                 # print(entry.id, entry.type, entry.name)
                 topic_tree = repo[entry.id]
                 topic_blob = repo[topic_tree['topic.json'].id]
-                topic = json.loads(topic_blob.data)
+                topic = json.loads(topic_blob.data.decode('utf-8'))
                 topic_by_id[topic['id']] = topic
                 # print()
                 # print(topic['mediaTitle'])
                 comments_tree = repo[topic_tree['comments'].id]
                 for comment_entry in comments_tree:
                     comment_blob = repo[comment_entry.id]
-                    comment = json.loads(comment_blob.data)
+                    comment = json.loads(comment_blob.data.decode('utf-8'))
                     # print('----')
                     # print(comment['text'])
                     comment_by_id[comment['id']] = comment
