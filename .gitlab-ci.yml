@@ -1,4 +1,5 @@
 before_script:
+  - apt update --yes
   - apt install --yes git
   - apt install --yes python3
   - apt install --yes python3-markupsafe
