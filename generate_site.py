@@ -35,6 +35,9 @@ import shutil
 import sys
 
 from markupsafe import escape
+import matplotlib
+# Force matplotlib to not use any Xwindows backend.
+matplotlib.use('Agg')
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 from matplotlib import rc
